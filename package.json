@@ -1,0 +1,26 @@
+{
+  "name": "sample-crud",
+  "version": "1.0.0",
+  "description": "It contains all crud operations for user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddubey02960/sample-crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siddubey02960/sample-crud/issues"
+  },
+  "homepage": "https://github.com/Siddubey02960/sample-crud#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2",
+    "uuid": "^9.0.1"
+  }
+}

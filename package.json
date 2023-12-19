@@ -4,7 +4,10 @@
   "description": "It contains all crud operations for user.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*.js --timeout 5000",
+    "start:dev": "nodemon src/app.js",
+    "start:prod": "pm2 start src/app.js --name my-api",
+    "start:multi": "pm2 start -i max src/app.js --name my-api"
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,16 @@
   },
   "homepage": "https://github.com/Siddubey02960/sample-crud#readme",
   "dependencies": {
+    "chai-http": "^4.4.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "joi": "^17.11.0",
     "nodemon": "^3.0.2",
+    "pm2": "^5.3.0",
     "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
   }
 }

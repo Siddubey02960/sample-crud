@@ -6,8 +6,7 @@
   "scripts": {
     "test": "mocha test/**/*.js --timeout 5000",
     "start:dev": "nodemon src/app.js",
-    "start:prod": "pm2 start src/app.js --name my-api",
-    "start:multi": "pm2 start -i max src/app.js --name my-api"
+    "start:prod": "node start src/app.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,6 @@
     "express": "^4.18.2",
     "joi": "^17.11.0",
     "nodemon": "^3.0.2",
-    "pm2": "^5.3.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
